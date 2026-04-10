@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background-color: #2c3e50;
+            color: white;
+            padding-top: 20px;
+            position: fixed;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #34495e;
+        }
+
+        /* Main Content */
+        .main {
+            margin-left: 220px;
+            width: 100%;
+        }
+
+        /* Header */
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Dashboard Cards */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ecf0f1;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        /* Button */
+        .btn {
+            padding: 10px 15px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="#">Home</a>
+        <a href="#">Detection</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>Driver Drowsiness Detection System</h1>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards">
+
+            <div class="card">
+                <h3>Status</h3>
+                <p>System is Active</p>
+            </div>
+
+            <div class="card">
+                <h3>Camera</h3>
+                <p>Webcam Connected</p>
+            </div>
+
+            <div class="card">
+                <h3>Alerts</h3>
+                <p>No alerts detected</p>
+            </div>
+
+            <div class="card">
+                <h3>Start Detection</h3>
+                <button class="btn" onclick="startDetection()">Start</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function startDetection() {
+            alert("Drowsiness Detection Started!");
+            // You can connect this with your Python backend
+        }
+    </script>
+
+</body>
+</html>

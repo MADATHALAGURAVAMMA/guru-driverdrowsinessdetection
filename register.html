@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f1226;
+        color: white;
+    }
+
+    .header {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header h2 {
+        margin: 5px;
+        font-size: 18px;
+    }
+
+    .header span {
+        color: #a855f7;
+        font-weight: bold;
+    }
+
+    .info-box {
+        width: 60%;
+        margin: 20px auto;
+        padding: 15px;
+        border-left: 4px solid #a855f7;
+        background: #1b1f3a;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    .container {
+        width: 420px;
+        margin: auto;
+        background: #1b1f3a;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 25px rgba(138, 43, 226, 0.2);
+    }
+
+    h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        display: flex;
+        gap: 10px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 6px;
+        border: none;
+        background: #2a2f4a;
+        color: white;
+    }
+
+    input::placeholder {
+        color: #aaa;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 12px;
+        color: #aaa;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    <h2><span>Alert</span>Drive</h2>
+    <h3>Driver Drowsiness Detection System</h3>
+</div>
+
+<div class="info-box">
+    <b>Stay Safe on the Road</b><br>
+    Our advanced drowsiness detection system monitors driver alertness in real-time and provides alerts when signs of fatigue are detected, helping prevent accidents during driving.
+</div>
+
+<div class="container">
+    <h3>Create Your Account</h3>
+
+    <form action="/register" method="POST">
+
+        <div class="row">
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+        </div>
+
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+
+        <div class="row">
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        </div>
+
+        <input type="text" name="drivingLicense" placeholder="Driving License Number" required>
+
+        <div class="row">
+            <select name="vehicleType" required>
+                <option value="">Select Vehicle Type</option>
+                <option>Car</option>
+                <option>Bike</option>
+                <option>Truck</option>
+                <option>Bus</option>
+            </select>
+
+            <input type="text" name="vehicleNumber" placeholder="Vehicle Number" required>
+        </div>
+
+        <select name="driverType" required>
+            <option value="">Select Driver Type</option>
+            <option>Private</option>
+            <option>Commercial</option>
+        </select>
+
+        <input type="text" name="emergencyContact" placeholder="Emergency Contact Number" required>
+
+        <button type="submit">Create Account</button>
+
+    </form>
+
+    <div class="footer">
+        By registering, you agree to our Terms & Privacy Policy.
+    </div>
+</div>
+
+</body>
+</html>
+```

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver Drowsiness Detection</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f1226;
+            color: white;
+            text-align: center;
+        }
+
+        .header {
+            padding: 20px;
+            background: #1b1f3a;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .nav {
+            margin-top: 10px;
+        }
+
+        .nav a {
+            color: #9b5cff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content {
+            margin-top: 50px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .video-container {
+            margin-top: 30px;
+        }
+
+        img {
+            width: 70%;
+            border-radius: 10px;
+            border: 2px solid #444;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Driver Drowsiness Detection System</h1>
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </div>
+</div>
+
+<div class="content">
+    <h2>Stay Alert, Stay Safe 🚗</h2>
+    <p>This system detects driver drowsiness in real-time using AI.</p>
+
+    <div class="video-container">
+        <img src="{{ url_for('video') }}" alt="Video Feed">
+    </div>
+</div>
+
+</body>
+</html>
+```
